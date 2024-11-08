@@ -2,78 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-4">
-        <h1>SUMIT KHANDURI</h1>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+
+    <header class="modern-header">
+        <div class="header-container">
+            <div class="logo">SK</div>
+            <nav class="modern-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content">
+            <h1 class="glitch" data-text="SUMIT KHANDURI">SUMIT KHANDURI</h1>
+            <p class="header-subtitle">I'm a <span class="typed-text"></span></p>
+            <div class="header-cta">
+                <a href="#projects" class="cta-button">View Projects</a>
+                <a href="#contact" class="cta-button outline">Contact Me</a>
+            </div>
+        </div>
     </header>
 
-    <section class="hero text-white text-center" style="background-image: url('https://images.hdqwalls.com/wallpapers/sunset-waves-red-5k-6k.jpg'); height: 400px; background-size: cover; display: flex; align-items: center; justify-content: center;">
-        <div>
-            <h2>Welcome to My Portfolio</h2>
-            <p>Showcasing my work and passion for web development.</p>
+    <section class="modern-hero">
+        <div class="hero-glass-card">
+            <h2 class="hero-title" data-text="Welcome to My Portfolio">Welcome to My Portfolio</h2>
+            <p class="hero-subtitle">Showcasing my work and passion for web development.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="modern-button">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
         </div>
     </section>
 
     <div class="container my-5">
-        <section id="about" class="mb-5">
-            <h2>About Me</h2>
-            <p>👋 Hi, I’m @Sumit</p>
-            <p> I’m interested in Tech & Coding</p>
-            <p>&#60;/&#62; I’m a Web Developer</p> 
-            <p>🧑‍💻 I’m looking to collaborate on projects</p>
-        </section>
-
-        <section id="projects" class="mb-5">
-            <h2>Projects</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="project1.png" class="card-img-top" alt="Project Image 1">
-                        <div class="card-body">
-                            <h5 class="card-title"> TODO LIST APP</h5>
-                            <p class="card-text">You can manage your todo's here.</p>
-                            <a href="https://benevolent-muffin-bc9590.netlify.app/" target="_blank" class="btn btn-primary">View Project</a>
+        <section id="about" class="modern-section">
+            <div class="container">
+                <h2 class="modern-title" data-text="About Me">About Me</h2>
+                <div class="glass-card">
+                    <div class="about-grid">
+                        <div class="about-item">
+                            <div class="about-icon">👋</div>
+                            <h3>Who Am I</h3>
+                            <p>Hi, I'm @Sumit</p>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-icon">🚀</div>
+                            <h3>Interests</h3>
+                            <p>Tech & Coding</p>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-icon">&#60;/&#62;</div>
+                            <h3>Role</h3>
+                            <p>Web Developer</p>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-icon">🧑‍💻</div>
+                            <h3>Goal</h3>
+                            <p>Project Collaboration</p>
                         </div>
                     </div>
                 </div>
-                <!-- Add more project cards here -->
-                <div class="col-md-4 mb-4">
-                  <div class="card">
-                      <img src="project2.png" class="card-img-top" alt="Project Image 2">
-                      <div class="card-body">
-                           <h5 class="card-title"> WEATHER FORECAST APP</h5>
-                           <p class="card-text">You can check your area weather here.</p>
-                          <a href="https://symphonious-llama-b65d2c.netlify.app/" target="_blank" class="btn btn-primary">View Project</a>
-                      </div>
-                  </div>
-              </div>
             </div>
         </section>
 
-        <section id="contact" class="mb-5">
-            <h2>Contact</h2>
-            <p>Email: mailtosumitkhanduri@gmail.com</p>
-            <p>LinkedIn: <a href="https://github.com/jus7coding" target="_blank">Your LinkedIn</a></p>
+        <section id="projects" class="modern-section">
+            <div class="container">
+                <h2 class="modern-title" data-text="Projects">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card glass-card">
+                        <div class="project-content">
+                            <img src="project1.png" alt="Project 1">
+                            <div class="project-info">
+                                <h3>TODO LIST APP</h3>
+                                <p>You can manage your todo's here.</p>
+                                <a href="https://benevolent-muffin-bc9590.netlify.app/" target="_blank" class="modern-button">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-content">
+                            <img src="project2.png" alt="Project 2">
+                            <div class="project-info">
+                                <h3>WEATHER FORECAST APP</h3>
+                                <p>You can check your area weather here.</p>
+                                <a href="https://symphonious-llama-b65d2c.netlify.app/" target="_blank" class="modern-button">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="modern-section">
+            <div class="container">
+                <h2 class="modern-title" data-text="Contact">Contact</h2>
+                <div class="contact-grid">
+                    <a href="mailto:mailtosumitkhanduri@gmail.com" class="contact-card glass-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>mailtosumitkhanduri@gmail.com</p>
+                    </a>
+                    <a href="https://github.com/jus7coding" target="_blank" class="contact-card glass-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </a>
+                </div>
+            </div>
         </section>
     </div>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024. All rights reserved.</p>
+    <footer class="modern-footer">
+        <div class="container">
+            <p>&copy; 2024 Sumit Khanduri. All rights reserved.</p>
+        </div>
     </footer>
+
+    <div id="particles-js"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
 </body>
 </html>
